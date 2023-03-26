@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+// import React, { useState } from "react";
+// import "./App.css";
 
-function App() {
+// export default function Cart() {
+//   const [cart, setCart] = useState(0);
+
+//   const increment = () => {
+//     setCart(cart + 1);
+//   };
+//   const decrement = () => {
+//     setCart(cart - 1);
+//   };
+
+//   return (
+//     <div style={{ margin: "20px" }}>
+//       {cart === 0 ? (
+//         <button className="add" onClick={increment}>
+//           Add
+//         </button>
+//       ) : (
+//         <div className="cart">
+//           <button className="cartButton" onClick={decrement}>
+//             -
+//           </button>
+//           <div className="value">{cart}</div>
+//           <button className="cartButton1" onClick={increment}>
+//             +
+//           </button>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+import React from "react";
+import "./App.css";
+import Routers from "./components/Routers";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="full-container">
+      <Routers />
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,11 @@
+.add{
+ border: 50px solid #063380;
+ border-radius: 6px;
+}
+.cart{
+    display: flex;
+    border:1px solid #063380;
+    width:58px;
+    height:32px;
+    border-radius: 6px;
+}
